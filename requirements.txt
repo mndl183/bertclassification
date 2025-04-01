@@ -1,6 +1,6 @@
 streamlit>=1.24.0
-tensorflow>=2.16
+tensorflow>=2.19
 tensorflow-hub>=0.15.0
-tensorflow-text==2.16
+tensorflow-text==2.19
 numpy>=1.24.0
 pandas>=2.0.0
