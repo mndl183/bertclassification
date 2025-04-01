@@ -79,7 +79,9 @@ st.markdown("""
 @st.cache_resource(show_spinner=False)
 def load_model_from_zip():
     """Download and load the saved BERT model from URL silently"""
-    model_url = "https://filedn.eu/l7s80SJp4rmpWYtuEpH57df/bertmodel/textguard_bert.zip"
+    
+    model_url = st.secrets["model_url"]
+    
     model_dir = "./downloaded_model"
     
     try:
