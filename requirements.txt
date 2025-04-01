@@ -4,3 +4,4 @@ tensorflow-hub
 tensorflow-text
 numpy
 pandas
+requests
