@@ -37,28 +37,3 @@ streamlit run app.py
 
 This will start the Streamlit server and open the application in your default web browser.
 
-### 5. Deploying to Streamlit Cloud
-
-To deploy to Streamlit Cloud:
-
-1. Push your code to a GitHub repository
-2. Log in to [Streamlit Cloud](https://streamlit.io/cloud)
-3. Create a new app and select your repository
-4. Set the main file path to `app.py`
-5. Deploy the app
-
-## Important Notes for Deployment
-
-- **Model Size**: BERT models can be large. Ensure your model is under the size limits of Streamlit Cloud or consider using a smaller model.
-- **Requirements**: All required packages are listed in `requirements.txt`. Streamlit Cloud will install these automatically.
-- **Secrets**: If your app requires API keys or secrets, use Streamlit's secrets management.
-
-## Using the App
-
-1. Enter text in the provided text area
-2. The model will classify the text and display the result
-3. You can also try one of the example messages by clicking the example buttons
-
-## Model Information
-
-The model used in this app is a fine-tuned BERT model based on `small_bert/bert_en_uncased_L-4_H-512_A-8`. It was trained to classify text messages as either normal (0) or spam/suspicious (1).
